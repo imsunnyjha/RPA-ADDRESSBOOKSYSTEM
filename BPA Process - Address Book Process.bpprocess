@@ -1,0 +1,37 @@
+﻿<process name="Address Book Process" version="1.0" bpversion="6.9.0.26970" narrative="Address Book System Process" byrefcollection="true" preferredid="d55c3f24-f676-4b45-8fbd-ef95f3d61888">
+  <view>
+    <camerax>0</camerax>
+    <cameray>0</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <stage stageid="dec00827-0ad6-4bbb-a53c-1d548911faa5" name="Start" type="Start">
+    <display x="15" y="-105" />
+    <onsuccess>876ea659-46eb-4cbe-b664-611f8f746997</onsuccess>
+  </stage>
+  <stage stageid="cf6581a6-dc83-4869-8339-fb3d735cfe85" name="End" type="End">
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="d3728597-014d-48c3-b315-cb67f8831815" name="Stage1" type="ProcessInfo">
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="876ea659-46eb-4cbe-b664-611f8f746997" name="Address Book System::CRUD Operation" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <onsuccess>4b12b2c5-8eae-4ead-9e28-0b2a27f1329f</onsuccess>
+    <resource object="Address Book System" action="CRUD Operation" />
+  </stage>
+  <stage stageid="4b12b2c5-8eae-4ead-9e28-0b2a27f1329f" name="Address Book System::Check Duplicates" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <onsuccess>2b427a96-a0c5-4346-b110-c586a7a8a346</onsuccess>
+    <resource object="Address Book System" action="Check Duplicates" />
+  </stage>
+  <stage stageid="2b427a96-a0c5-4346-b110-c586a7a8a346" name="Address Book System::Retrieve Data" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="45" />
+    <onsuccess>cf6581a6-dc83-4869-8339-fb3d735cfe85</onsuccess>
+    <resource object="Address Book System" action="Retrieve Data" />
+  </stage>
+</process>
